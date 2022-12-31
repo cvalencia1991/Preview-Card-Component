@@ -32,7 +32,7 @@ Users should be able to:
 
 
 ### Links
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [solution URL](https://cvalencia1991.github.io/Preview-Card-Component/)
 - Live Site URL: [Live Solution](https://github.com/cvalencia1991/Preview-Card-Component)
 
 ## My process
