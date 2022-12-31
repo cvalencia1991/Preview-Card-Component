@@ -27,6 +27,7 @@
     filter: brightness();
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
+    filter: invert(23%) sepia(4%) saturate(3837%) hue-rotate(243deg) brightness(80%) contrast(145%);
 }
 
 .title {
@@ -133,6 +134,7 @@
         height: 440px;
         border-top-right-radius: 10px;
         border-bottom-right-radius: 10px;
+        filter: invert(23%) sepia(4%) saturate(3837%) hue-rotate(243deg) brightness(80%) contrast(145%);
     }
 
     .imagenMobile{
