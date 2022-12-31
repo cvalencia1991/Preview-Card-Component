@@ -149,8 +149,7 @@
         width: 405px;
         padding: 3em;
         gap: 3em;
-        border-top-left-radius: 10px;
-        border-bottom-left-radius: 10px;
+        border-radius: 10px 0px 0px 10px;
     }
 
     .stylenumber{
@@ -177,6 +176,12 @@
         font-size: 15px;
         margin: 0;
         text-align: initial;
+    }
+
+    .colorimages{
+        background-image: url('./images/image-header-desktop.jpg');
+        width: 20px;
+        height: 30px;
     }
 
 
