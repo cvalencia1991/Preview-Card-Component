@@ -1,0 +1,89 @@
+ @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+
+ body{
+    background: hsl(233, 47%, 7%);
+ }
+
+.stylehead{
+    color:#aa5cdb;
+}
+
+.wrapper{
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50px;
+}
+.title{
+    color:hsl(0, 0%, 100%);
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: xx-large;
+}
+.information{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: hsl(244, 38%, 16%);
+    color: hsl(0, 0%, 100%);
+    width: 405px;
+    padding: 3em;
+    gap: 3em;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.imagen{
+    background-image: url('./images/image-header-desktop.jpg');
+    width: 540px;
+    height: 440px;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+.information_data{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1em;
+    margin: 0em
+}
+
+.styleinfo{
+    display: flex;
+    list-style: none;
+    gap: 3em;
+    margin: 0;
+    padding: 0;
+
+}
+.imagenMobile{
+    display: none;
+}
+
+.imageDesktop{
+    width: 540px;
+    height: 440px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.infodataanalitycs{
+    font-family: 'Lexend Deca', sans-serif;
+    color:hsla(0, 0%, 100%, 0.6);
+    font-size: 15px;
+    margin: 0;
+}
+
+.stylenumber{
+    color:hsl(0, 0%, 100%);
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: xx-large;
+    margin: 0;
+}
+
