@@ -141,9 +141,9 @@ img{
          flex-direction: row;
     }
 
-    .imageDesktop{
+    .imageDesktop {
         display: flex;
-        height: 25rem;
+        height: 46.6vh;
         border-top-right-radius: 10px;
         border-bottom-right-radius: 10px;
     }
@@ -160,7 +160,6 @@ img{
         background-color: hsl(244, 38%, 16%);
         color: hsl(0, 0%, 100%);
         width: 405px;
-        height: 33vh;
         padding: 3em;
         gap: 1em;
         border-radius: 10px 0px 0px 10px;
