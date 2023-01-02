@@ -143,7 +143,7 @@ img{
 
     .imageDesktop {
         display: flex;
-        height: 46.6vh;
+        width: 37rem;
         border-top-right-radius: 10px;
         border-bottom-right-radius: 10px;
     }
@@ -160,7 +160,7 @@ img{
         background-color: hsl(244, 38%, 16%);
         color: hsl(0, 0%, 100%);
         width: 405px;
-        padding: 3em;
+        padding: 3.3em;
         gap: 1em;
         border-radius: 10px 0px 0px 10px;
     }
