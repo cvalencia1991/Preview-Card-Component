@@ -19,15 +19,15 @@
     transform: translate(-50%, -50%);
     border-radius: 50px;
     flex-direction: column-reverse;
+    margin-top: 2em;
+
 }
 
 .imagenMobile {
     display: flex;
     width: 20em;
     filter: brightness();
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
-    filter: invert(20%) sepia(4%) saturate(3837%) hue-rotate(243deg) brightness(80%) contrast(145%);
+    border-radius: 10px 10px 0px 0px;
 }
 
 .title {
@@ -79,6 +79,15 @@
     text-align: center;
 }
 
+.images {
+    background-color: hsl(277, 64%, 61%);
+    border-radius: 10px 10px 0px 0px;
+}
+
+img{
+    mix-blend-mode: multiply;
+    opacity: 0.8;
+}
 
 
 .imageDesktop{
@@ -99,7 +108,7 @@
     color: hsl(0, 0%, 100%);
     font-family: 'Inter', sans-serif;
     font-weight: 700;
-    font-size: xx-large;
+    font-size: larger;
     margin: 0;
     text-align: center;
 }
@@ -116,25 +125,27 @@
         text-align: initial;
     }
 
+    .images {
+        background-color: hsl(277, 64%, 61%);
+        border-radius: 0px 10px 10px 0px;
+
+
+    }
+
 
     .wrapper{
+        min-height:100vh;
         display: flex;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        border-radius: 50px;
-        flex-direction: row;
-        padding: 103px;
+        align-items: center;
+         justify-content: center;
+         flex-direction: row;
     }
 
     .imageDesktop{
         display: flex;
-        width: 540px;
-        height: 440px;
+        height: 25rem;
         border-top-right-radius: 10px;
         border-bottom-right-radius: 10px;
-        filter: invert(20%) sepia(4%) saturate(3837%) hue-rotate(243deg) brightness(80%) contrast(145%);
     }
 
     .imagenMobile{
@@ -149,17 +160,18 @@
         background-color: hsl(244, 38%, 16%);
         color: hsl(0, 0%, 100%);
         width: 405px;
+        height: 33vh;
         padding: 3em;
         gap: 1em;
         border-radius: 10px 0px 0px 10px;
     }
 
     .stylenumber{
-        color:hsl(0, 0%, 100%);
-        font-family: 'Inter', sans-serif;
+        color: rgb(255, 255, 255);
+        font-family: Inter, sans-serif;
         font-weight: 700;
-        font-size: xx-large;
-        margin: 0;
+        font-size: larger;
+        margin: 0px;
     }
 
     .styleinfo{
