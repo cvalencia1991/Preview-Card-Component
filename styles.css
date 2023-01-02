@@ -178,7 +178,7 @@ img{
         display: flex;
         list-style: none;
         gap: 3em;
-        margin: 0;
+        margin-top: 4rem;
         padding: 0;
         flex-direction: row;
 
