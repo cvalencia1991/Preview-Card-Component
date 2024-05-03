@@ -1,3 +1,10 @@
+:root{
+    --backgorund-color:hsl(233, 47%, 7%);
+    --purple:hsl(277, 64%, 61%);
+    --slighty-trasnparent:hsla(0, 0%, 100%, 0.75);
+    --dark-desaturated:hsl(244, 38%, 16%);
+}
+
 @font-face{
         font-family: 'Inter';
         src:url('./fonts/Inter/Inter-VariableFont_slnt\,wght.ttf'),
@@ -13,7 +20,7 @@
 
  body{
         display:flex;
-        background: hsl(233, 47%, 7%);
+        background: var(--backgorund-color);
         justify-content: center;
         align-items: center;
         flex-direction: column-reverse;
@@ -21,7 +28,7 @@
  }
 
 .styleHeader{
-        color:hsl(277, 64%, 61%);
+        color:var(--purple);
 }
 
 .info{
@@ -30,10 +37,11 @@
         flex-direction: column;
         align-items: center;
         gap: 1rem;
-        background-color: hsl(244, 38%, 16%);
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
-        padding: 1rem;
+        max-width: 540px;
+        padding: 5px;
+        background:var(--dark-desaturated);
 }
 
 .wrapper{
@@ -41,7 +49,7 @@
         align-items: center;
         justify-content: center;
         flex-direction: column-reverse;
-        height: auto;
+        margin: auto;
 }
 
 .imagenMobile {
@@ -49,10 +57,11 @@
         width: 100%;
         filter: brightness();
         border-radius: 10px 10px 0px 0px;
+        background-color: var(--backgorund-color);
 }
 
 .title {
-        color: hsl(0, 0%, 100%);
+        color: var(--slighty-trasnparent);
         font-family: 'Inter', sans-serif;
         font-weight: 700;
         font-size: xx-large;
@@ -64,16 +73,8 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        color: hsl(0, 0%, 100%);
+        color: var(--slighty-trasnparent);
         width: auto;
-}
-
-.imagen{
-        background-image: url('./images/image-header-desktop.jpg');
-        width: 540px;
-        height: 440px;
-        background-repeat: no-repeat;
-        background-size: auto;
 }
 
 .information_data{
@@ -88,14 +89,14 @@
         display: flex;
         list-style: none;
         gap: 3em;
-        margin: 0;
+        margin: 1rem;
         padding: 0;
         flex-direction: column;
         text-align: center;
 }
 
 .images {
-        background-color: hsl(277, 64%, 61%);
+        background-color: var(--purple);
         border-radius: 10px 10px 0px 0px;
         margin: 0px;
         width: 100%;
@@ -110,11 +111,12 @@ img{
 
 .imageDesktop{
         display: none;
+        background-color: var(--backgorund-color);
 }
 
 .infodataanalitycs{
         font-family: 'Lexend Deca', sans-serif;
-        color:hsla(0, 0%, 100%, 0.6);
+        color:var(--slighty-trasnparent);
         font-size: 16px;
         margin: 0;
         text-align: center;
@@ -123,12 +125,11 @@ img{
 
 .infoImages{
     display: flex;
-    background-image: url('./images/image-header-mobile.jpg');
 }
 
 
 .stylenumber{
-        color: hsl(0, 0%, 100%);
+        color: var(--slighty-trasnparent);
         font-family: 'Inter', sans-serif;
         font-weight: 700;
         font-size:x-large;
@@ -145,7 +146,7 @@ img{
      }
 
     .title{
-        color:hsl(0, 0%, 100%);
+        color:var(--slighty-trasnparent);
         font-family: 'Inter', sans-serif;
         font-weight: 700;
         font-size: xx-large;
@@ -153,7 +154,7 @@ img{
     }
 
     .images {
-            background-color: hsl(277, 64%, 61%);
+            background-color: var(--purple);
             border-radius: 0px 10px 10px 0px;
             width: auto;
     }
@@ -165,6 +166,7 @@ img{
             justify-content: center;
             flex-direction: row;
             margin: 1rem;
+            height: 480px;
     }
 
     .imageDesktop {
@@ -178,17 +180,16 @@ img{
     }
 
     .information {
-            color: hsl(0, 0%, 100%);
+            color: var(--slighty-trasnparent);
             height: 100%;
             gap: 1em;
             flex-direction: row;
             justify-content: center;
             align-items: center;
-            height:447px;
     }
 
     .stylenumber{
-            color: rgb(255, 255, 255);
+            color: var(--slighty-trasnparent);
             font-family: Inter, sans-serif;
             font-weight: 700;
             margin: 0px;
@@ -206,7 +207,7 @@ img{
 
     .infodataanalitycs{
             font-family: 'Lexend Deca', sans-serif;
-            color:hsla(0, 0%, 100%, 0.6);
+            color:var(--slighty-trasnparent);
             font-size: 15px;
             margin: 0;
             text-align: initial;
@@ -216,8 +217,10 @@ img{
 
     .info{
             border-radius: 10px 0px 0px 10px;
+            height:80%;
+            background:var(--dark-desaturated);
             padding: 3rem;
-            height:86%;
+            width: 28%;
     }
 
     .information_data{
