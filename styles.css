@@ -1,121 +1,148 @@
- @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
- @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
-
-
- body{
-    background: hsl(233, 47%, 7%);
- }
-
-.stylehead{
-    color:#aa5cdb;
+@font-face{
+        font-family: 'Inter';
+        src:url('./fonts/Inter/Inter-VariableFont_slnt\,wght.ttf'),
+            local('Inter-Regular'),
+            local('Inter-Bold');
 }
 
+@font-face{
+        font-family: 'Lexend';
+        src:url('./fonts/Lexend_Deca/LexendDeca-VariableFont_wght.ttf'),
+            local('Lexend_Deca-Regular.ttf'),
+}
 
-.wrapper {
-    display: flex;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 50px;
-    flex-direction: column-reverse;
-    margin-top: 2em;
+ body{
+        display:flex;
+        background: hsl(233, 47%, 7%);
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+        margin: 1rem;
+ }
 
+.styleHeader{
+        color:hsl(277, 64%, 61%);
+}
+
+.info{
+        display: flex;
+        justify-items: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        background-color: hsl(244, 38%, 16%);
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        padding: 1rem;
+}
+
+.wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column-reverse;
+        height: auto;
 }
 
 .imagenMobile {
-    display: flex;
-    width: 20em;
-    filter: brightness();
-    border-radius: 10px 10px 0px 0px;
+        display: flex;
+        width: 100%;
+        filter: brightness();
+        border-radius: 10px 10px 0px 0px;
 }
 
 .title {
-    color: hsl(0, 0%, 100%);
-    font-family: 'Inter', sans-serif;
-    font-weight: 700;
-    font-size: xx-large;
-    text-align: center;
+        color: hsl(0, 0%, 100%);
+        font-family: 'Inter', sans-serif;
+        font-weight: 700;
+        font-size: xx-large;
+        text-align: center;
 }
-
 
 .information {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: hsl(244, 38%, 16%);
-    color: hsl(0, 0%, 100%);
-    gap: 3em;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: hsl(0, 0%, 100%);
+        width: auto;
 }
-
-
 
 .imagen{
-    background-image: url('./images/image-header-desktop.jpg');
-    width: 540px;
-    height: 440px;
-    background-repeat: no-repeat;
-    background-size: auto;
+        background-image: url('./images/image-header-desktop.jpg');
+        width: 540px;
+        height: 440px;
+        background-repeat: no-repeat;
+        background-size: auto;
 }
+
 .information_data{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1em;
-    margin: 0em
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1em;
+        margin: 0em
 }
 
 .styleinfo {
-    display: flex;
-    list-style: none;
-    gap: 3em;
-    margin: 0;
-    padding: 0;
-    flex-direction: column;
-    text-align: center;
+        display: flex;
+        list-style: none;
+        gap: 3em;
+        margin: 0;
+        padding: 0;
+        flex-direction: column;
+        text-align: center;
 }
 
 .images {
-    background-color: hsl(277, 64%, 61%);
-    border-radius: 10px 10px 0px 0px;
+        background-color: hsl(277, 64%, 61%);
+        border-radius: 10px 10px 0px 0px;
+        margin: 0px;
+        width: 100%;
+        background-repeat: no-repeat;
 }
 
 img{
-    mix-blend-mode: multiply;
-    opacity: 0.8;
+        mix-blend-mode: multiply;
+        opacity: 0.8;
 }
 
 
 .imageDesktop{
-  display: none;
+        display: none;
 }
 
 .infodataanalitycs{
-    font-family: 'Lexend Deca', sans-serif;
-    color:hsla(0, 0%, 100%, 0.6);
-    font-size: 16px;
-    margin: 0;
-    text-align: center;
-    line-height: 1.5;
+        font-family: 'Lexend Deca', sans-serif;
+        color:hsla(0, 0%, 100%, 0.6);
+        font-size: 16px;
+        margin: 0;
+        text-align: center;
+        line-height: 1.5;
+}
+
+.infoImages{
+    display: flex;
+    background-image: url('./images/image-header-mobile.jpg');
 }
 
 
 .stylenumber{
-    color: hsl(0, 0%, 100%);
-    font-family: 'Inter', sans-serif;
-    font-weight: 700;
-    font-size: larger;
-    margin: 0;
-    text-align: center;
+        color: hsl(0, 0%, 100%);
+        font-family: 'Inter', sans-serif;
+        font-weight: 700;
+        font-size:x-large;
+        margin: 0;
+        text-align: center;
 }
 
-
-
-@media screen and (min-width: 376px) {
+@media screen and (min-width: 768px) {
+     body{
+             padding: 0px;
+             height: 100vh;
+             display: flex;
+             justify-content: center;
+     }
 
     .title{
         color:hsl(0, 0%, 100%);
@@ -126,77 +153,74 @@ img{
     }
 
     .images {
-        background-color: hsl(277, 64%, 61%);
-        border-radius: 0px 10px 10px 0px;
-
-
+            background-color: hsl(277, 64%, 61%);
+            border-radius: 0px 10px 10px 0px;
+            width: auto;
     }
 
-
     .wrapper{
-        min-height:100vh;
-        display: flex;
-        align-items: center;
-         justify-content: center;
-         flex-direction: row;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            margin: 1rem;
     }
 
     .imageDesktop {
-        display: flex;
-        width: 37rem;
-        border-top-right-radius: 10px;
-        border-bottom-right-radius: 10px;
+            display: flex;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
     }
 
     .imagenMobile{
-        display: none;
+            display: none;
     }
 
     .information {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
-        background-color: hsl(244, 38%, 16%);
-        color: hsl(0, 0%, 100%);
-        width: 405px;
-        padding: 3.3em;
-        gap: 1em;
-        border-radius: 10px 0px 0px 10px;
+            color: hsl(0, 0%, 100%);
+            height: 100%;
+            gap: 1em;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            height:447px;
     }
 
     .stylenumber{
-        color: rgb(255, 255, 255);
-        font-family: Inter, sans-serif;
-        font-weight: 700;
-        font-size: larger;
-        margin: 0px;
+            color: rgb(255, 255, 255);
+            font-family: Inter, sans-serif;
+            font-weight: 700;
+            margin: 0px;
     }
 
     .styleinfo{
-        display: flex;
-        list-style: none;
-        gap: 3em;
-        margin-top: 4rem;
-        padding: 0;
-        flex-direction: row;
+            display: flex;
+            list-style: none;
+            gap: 3em;
+            margin-top: 4rem;
+            padding: 0;
+            flex-direction: row;
 
     }
 
     .infodataanalitycs{
-        font-family: 'Lexend Deca', sans-serif;
-        color:hsla(0, 0%, 100%, 0.6);
-        font-size: 15px;
-        margin: 0;
-        text-align: initial;
-        line-height: 1.5;
-    }
-
-    .colorimages{
-        background-image: url('./images/image-header-desktop.jpg');
-        width: 20px;
-        height: 30px;
+            font-family: 'Lexend Deca', sans-serif;
+            color:hsla(0, 0%, 100%, 0.6);
+            font-size: 15px;
+            margin: 0;
+            text-align: initial;
+            line-height: 1.5;
     }
 
 
+    .info{
+            border-radius: 10px 0px 0px 10px;
+            padding: 3rem;
+            height:86%;
+    }
+
+    .information_data{
+            justify-content: center;
+    }
 }
