@@ -39,8 +39,8 @@
         gap: 1rem;
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
-        max-width: 540px;
-        padding: 5px;
+        max-width: 33.75rem;
+        padding: 1rem;
         background:var(--dark-desaturated);
 }
 
@@ -193,6 +193,7 @@ img{
             font-family: Inter, sans-serif;
             font-weight: 700;
             margin: 0px;
+            text-align: left;
     }
 
     .styleinfo{
@@ -219,8 +220,8 @@ img{
             border-radius: 10px 0px 0px 10px;
             height:80%;
             background:var(--dark-desaturated);
-            padding: 3rem;
-            width: 28%;
+            width: 30%;
+            padding: 3rem 5rem;
     }
 
     .information_data{
